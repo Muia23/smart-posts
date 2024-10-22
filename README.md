@@ -25,12 +25,15 @@ Follow these instructions to set up and run the application on your local machin
    git clone https://github.com/Muia23/smart-posts.git
 
 2. **Navigate to the Project Directory**
+    ```bash
    cd smart-json
 
 3. **Install Dependencies**
+    ```bash
    npm install
 
 4. **Run the Application**
+    ```bash
    ng serve
 
 5. **Open in Your Browser**
