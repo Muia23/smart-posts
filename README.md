@@ -1,27 +1,28 @@
-# User Registration & Login with Auth0
+# Angular Auth0 & JSONPlaceholder CRUD Application
 
-
-This is an Angular application that demonstrates user registration and login functionality using the Auth0 public API. This app securely handles authentication and offers features such as universal login, signup, and protected routes.
+This project is a simple Angular-based application that demonstrates user authentication using the **Auth0** API and basic CRUD operations using **JSONPlaceholder**. It allows users to register, log in, and manage posts securely. The project highlights the integration of Auth0 for authentication, alongside consuming a public API to perform typical Create, Read, Update, and Delete operations.
 
 ## Features
 - 🌐 **User Authentication**: Secure login and registration via Auth0.
-- 🖥️ **Universal Login**: Consistent user experience across different devices.
-- 📱 **Responsive Design**: Built using Angular Material for a seamless interface.
-- 💾 **Session Management**: Persistent user sessions using session storage.
+- 🖥️ **Universal Login**: Implements Auth0's Universal Login for easy and secure authentication.
+- 📱 **CRUD Operations**: Manage posts (Create, Read, Update, Delete) through the **JSONPlaceholder** API.
 - 🔐 **Profile Management**: Easy logout and profile management features.
 
-## Technologies Used
-- **Angular**
-- **Auth0**
-- **Angular Material**
-- **TypeScript**
-- **RxJS**
+## Prerequisites
 
-## Setup Instructions
+Before running this application, ensure you have the following installed:
+
+- [Node.js](https://nodejs.org/en/download/)
+- [Angular CLI](https://angular.io/cli)
+
+## Getting Started
+
+Follow these instructions to set up and run the application on your local machine.
+
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/your-username/repository-name.git
+   git clone https://github.com/Muia23/smart-posts.git
 
 2. **Navigate to the Project Directory**
    cd smart-json
