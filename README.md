@@ -48,4 +48,4 @@ Before running the application, configure the Auth0 client ID and domain:
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-Developed with 💻 and ☕ by Muema23
+Developed with 💻 and ☕ by **Muia23**
