@@ -1,0 +1,136 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.mat-dialog-container {
+  background: 
+    linear-gradient(
+      0deg,
+      rgba(21, 21, 21, 0.4) 0%, /* 40% opacity at the top */
+      rgba(21, 21, 21, 0) 100%  /* 0% opacity at the bottom */
+    ),
+    rgba(255, 255, 255, 0.1); /* Optional semi-transparent white for added glass effect */
+    
+  backdrop-filter: blur(10px); /* Blur effect */
+  border-radius: 10px; /* Rounded corners */
+  padding: 16px; /* Padding for spacing */
+  color: #fff; /* Text color for contrast */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5); /* Add a shadow for depth */
+  
+  /* Optional: Ensure the modal takes full width and height */
+  width: 80%; /* Adjust as necessary */
+  max-width: 600px; /* Limit maximum width */
+  height: auto; /* Adjust height automatically */
+  max-height: 90vh; /* Prevent overflow */
+  overflow-y: auto; /* Scroll if content exceeds max height */
+}
+
+/* Optional: Add styling for the header and close button */
+.mat-dialog-title {
+  margin: 0;
+  font-weight: bold;
+}
+
+/* Optional: Style for close button */
+.mat-dialog-close {
+  color: rgba(255, 255, 255, 0.8); /* Slightly lighter for contrast */
+}
+.post-container {
+  display: flex;
+  padding: 16px;
+  height: 90vh;  
+  box-sizing: border-box;
+}
+.column {
+  flex: 1;
+  padding: 8px;
+}
+
+/* .create-post-column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+.posts-column {  
+  min-width: 550px;
+  overflow-y: auto;
+}
+
+.posts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.post-card {
+  width: 500px;
+  height: auto;
+  transition: transform 0.2s; 
+  background: 
+    linear-gradient(
+      0deg,
+      #1515152f 0%,
+      #15151500 100%
+    ),
+    #ffffff1a; 
+  backdrop-filter: blur(10px);
+  border-radius: 10px;  
+  border: 1px solid #201f1f2f;
+  padding: 16px;
+  box-shadow: 0 4px 5px #00000033;
+  overflow: hidden;  
+  position: relative;
+  z-index: 1;
+}
+
+
+.post-card:hover {
+  transform: scale(1.02);
+}
+
+.post-container a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.post-container a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.post-container a.disabled {
+  pointer-events: none; 
+  cursor: default; 
+}
+
+.post-title {
+  color: #413A3A;
+}
+
+.post-body {
+  color: #696363;
+}
+
+.posted-by {
+  text-align: right;
+  width: 100%;
+  color: #696363;
+}
+.posted-by-name {
+  font-weight: lighter;
+}
+.post-btn {
+  color: #413A3A;
+  background: 
+    linear-gradient(
+      0deg,
+      #1515152f 0%,
+      #15151500 100%
+    ),
+    #ffffff1a; 
+  backdrop-filter: blur(10px);
+  border-radius: 10px;  
+  border: 1px solid #201f1f2f;
+}

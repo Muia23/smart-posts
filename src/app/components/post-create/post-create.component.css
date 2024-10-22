@@ -1,0 +1,37 @@
+.post-form {
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px; /* Space between form elements */
+    padding: 16px; /* Padding around the form */
+}
+
+.full-width {
+    width: 100%;
+}
+
+.dialog-actions {
+    display: flex;
+    justify-content: center; /* Center the button container */
+    padding: 16px; /* Optional padding for spacing */
+}
+
+.button-container {
+    display: flex;
+    align-items: center; /* Space between buttons */
+}
+
+.divider {
+    width: 1px; /* Width of the divider */
+    height: 24px; /* Height of the divider */
+    background-color: #696363; /* Divider color */
+    margin: 0 16px; /* Spacing around the divider */
+  }
+
+.button-text{
+    color: #696363;
+}
+
+.mat-dialog-title {
+    text-align: center;
+}

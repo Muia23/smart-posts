@@ -1,27 +1,47 @@
-# SmartJson
+# User Registration & Login with Auth0
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.8.
 
-## Development server
+This is an Angular application that demonstrates user registration and login functionality using the Auth0 public API. This app securely handles authentication and offers features such as universal login, signup, and protected routes.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Features
+- 🌐 **User Authentication**: Secure login and registration via Auth0.
+- 🖥️ **Universal Login**: Consistent user experience across different devices.
+- 📱 **Responsive Design**: Built using Angular Material for a seamless interface.
+- 💾 **Session Management**: Persistent user sessions using session storage.
+- 🔐 **Profile Management**: Easy logout and profile management features.
 
-## Code scaffolding
+## Technologies Used
+- **Angular**
+- **Auth0**
+- **Angular Material**
+- **TypeScript**
+- **RxJS**
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Setup Instructions
 
-## Build
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/your-username/repository-name.git
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+2. **Navigate to the Project Directory**
+   cd smart-json
 
-## Running unit tests
+3. **Install Dependencies**
+   npm install
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+4. **Run the Application**
+   ng serve
 
-## Running end-to-end tests
+5. **Open in Your Browser**
+   http://localhost:4200
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Configuration
+Before running the application, configure the Auth0 client ID and domain:
 
-## Further help
+1. Create an Auth0 account and set up a new application.
+2. Add your Auth0 configuration in src/auth/auth.config.ts   
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+Developed with 💻 and ☕ by Muema23

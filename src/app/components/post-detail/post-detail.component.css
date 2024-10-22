@@ -1,0 +1,38 @@
+.post-card {
+    width: 700px;
+    height: auto;
+    transition: transform 0.2s; 
+    background: 
+      linear-gradient(
+        0deg,
+        #1515152f 0%,
+        #15151500 100%
+      ),
+      #ffffff1a; 
+    backdrop-filter: blur(10px);
+    border-radius: 10px;  
+    border: 1px solid #201f1f2f;
+    padding: 16px;
+    box-shadow: 0 4px 5px #00000033;
+    overflow: hidden;  
+    position: relative;
+    z-index: 1;
+    margin: 20px auto;
+  }
+  
+  .post-title {
+    color: #413A3A;
+  }
+  
+  .post-body {
+    color: #696363;
+  }
+  
+  .posted-by {
+    text-align: right;
+    width: 100%;
+    color: #696363;
+  }
+  .posted-by-name {
+    font-weight: lighter;
+  }

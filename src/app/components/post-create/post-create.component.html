@@ -1,0 +1,32 @@
+<h2 mat-dialog-title class="mat-dialog-title">{{ postForm.value.id ? 'Update Post' : 'Create Post' }}</h2>
+<mat-dialog-content>
+    <form [formGroup]="postForm" (ngSubmit)="onSubmit()" class="post-form">
+        <mat-form-field appearance="fill" class="full-width">
+            <mat-label>Post Title</mat-label>
+            <input matInput formControlName="title" placeholder="Enter your post title">
+            <mat-error *ngIf="postForm.get('title')?.invalid && postForm.get('title')?.touched">
+                Title is required.
+            </mat-error>
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" class="full-width">
+            <mat-label>Content</mat-label>
+            <textarea matInput formControlName="body" placeholder="Write your post content here"></textarea>
+            <mat-error *ngIf="postForm.get('body')?.invalid && postForm.get('body')?.touched">
+                Content is required.
+            </mat-error>
+        </mat-form-field>
+
+        <div *ngIf="postForm.value.userId">
+            <p><strong>Posted By ID:</strong> {{ postForm.value.userId }}</p>
+        </div>
+        
+            <div class="button-container">
+                    <button mat-button class="button-text" type="submit">
+                        {{ postForm.value.id ? 'Update Post' : 'Create Post' }}
+                    </button>
+                    <span class="divider"></span>
+                    <button mat-button class="button-text" (click)="onCancel()">Cancel</button>
+            </div>        
+    </form>
+</mat-dialog-content>
